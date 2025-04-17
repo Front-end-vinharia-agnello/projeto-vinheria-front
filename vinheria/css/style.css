@@ -135,3 +135,23 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+.info-contato {
+  background-color: #f4f1ee;
+  border-left: 4px solid #8b0000;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-contato p {
+  margin: 0.5rem 0;
+}
+
+.info-contato strong {
+  color: #8b0000;
+}
+
+
