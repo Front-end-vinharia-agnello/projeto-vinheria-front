@@ -1,74 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/source/css/styles.css" />
-  <title>Vinharia Agnello</title>
-</head>
-<body>
-  <div id="titulo">
-    <h1>Vinharia Agnello</h1>
-  </div>
-
-  <div id="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./vinheria/img/vinho.png" />
+    <title>Casta Nobre</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
+      
+      <section id="castanova">
+      <div id="div_castanova"></div>
       <nav>
         <ul>
-          <li><a href="#produto">Vinhos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#vinhos">Nossos Vinhos</a></li>
           <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="banner">
-      <img src="/source/imgs/banner.png" alt="Banner de promoção" />
-    </section>
-
-    <div id="produto">
-      <main>
-        <article class="produto" id="merlot">
-          <h3>Vinho Merlot</h3>
-          <p>R$ 219,90</p>
-          <button type="submit">Comprar</button>
-        </article>
-
-        <article class="produto" id="latour">
-          <h3>Vinho Latour</h3>
-          <p>R$ 260,90</p>
-          <button type="submit">Comprar</button>
-        </article>
-
-        <article class="produto" id="chateaublanc">
-          <h3>Chateau Blanc</h3>
-          <p>R$ 359,00</p>
-          <button type="submit">Comprar</button>
-        </article>
-
-        <article class="produto" id="chileno">
-          <h3>Vinho Chileno</h3>
-          <p>R$ 800,00</p>
-          <button type="submit">Comprar</button>
-        </article>
-      </main>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <div class="contato">
-                <h3>Contato</h3>
-                <p>Email: vinhariaagnello@gmail.com</p>
-                <p>Telefone: (11) 1234-5678</p>
-            </div>
-            <div class="redesSociais">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>instagram</li>
-                    <li>Twitter</li>
-                </ul>
-            </div>
+        </ul> 
+        <div id="login-compras">
+          <div id="pesquisa">
+            <input type="text" placeholder="Digite seu vinho">
+            <button><img src="img/procurar.png" alt="buscar" width="18px"></button>
+          </div>
+          <button>Login</button>
+          <button id="carrinho-de-compras"><img src="img/carrinho-de-compras.png" alt="Carrinho de compras"></button>
         </div>
+      </nav>
+    </section>
+    </header>
+    
+    <section id="banner">
+      <div>
+      </div>
+      </section>
+      <hr>
+    <main>
+      <section id="vinhos">
+        <h2>𝐍𝐨𝐬𝐬𝐨𝐬 𝐕𝐢𝐧𝐡𝐨𝐬</h2>
+
+        <div class="galeria">
+          <div class="vinho">
+            <img src="./img/vinho tinto.jpg" alt="Vinho Tinto Premium" />
+            <h3>Vinho Tinto Premium</h3>
+            <p>Intenso e encorpado, perfeito para momentos especiais.</p>
+            <p><strong>Preço:</strong> R$ 149,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+
+          <div class="vinho">
+            <img src="./img/vinho branco.jpg" alt="Vinho Branco Suave" />
+            <h3>Vinho Branco Suave</h3>
+            <p>Refrescante e leve, ideal para dias quentes.</p>
+            <p><strong>Preço:</strong> R$ 89,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+
+          <div class="vinho">
+            <img src="./img/vinho rose.jpg" alt="Vinho Rosé" />
+            <h3>Vinho Rosé</h3>
+            <p>Delicado e frutado, um toque de frescor para o seu dia.</p>
+            <p><strong>Preço:</strong> R$ 119,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+
+          <div class="vinho">
+            <img src="./img/vinho espumante.jpg" alt="Vinho Espumante" />
+            <h3>Vinho Espumante</h3>
+            <p>Perfeito para celebrações, leve e efervescente.</p>
+            <p><strong>Preço:</strong> R$ 159,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+
+          <div class="vinho">
+            <img src="./img/vinho verde.jpg" alt="Vinho Verde" />
+            <h3>Vinho Verde</h3>
+            <p>Jovem, fresco e levemente frisante. Uma experiência única.</p>
+            <p><strong>Preço:</strong> R$ 99,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+
+          <div class="vinho">
+            <img src="./img/vinho do porto.jpg" alt="Vinho do Porto" />
+            <h3>Vinho do Porto</h3>
+            <p>Doce e intenso, ideal para sobremesas e ocasiões especiais.</p>
+            <p><strong>Preço:</strong> R$ 179,90</p>
+            <button type="submit">Comprar</button>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <div class="lado-a-lado">
+        <section id="contato">
+          <h2>Contato</h2>
+          <form>
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu e-mail" required />
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      
+        <section id="sobre">
+          <h2>Sobre a Vinheria</h2>
+          <p>
+            Há mais de duas décadas, entre colinas ensolaradas e vinhedos
+          silenciosos, nasceu a Vinheria Casta Nobre. Inspirada na tranquilidade
+          do campo e na sabedoria passada de geração em geração, ela surgiu do
+          sonho do Sr Mariano, um apaixonado por uvas, barris de carvalho e boas
+          conversas à mesa. As primeiras garrafas vieram direto da fazenda da
+          família, onde cada cacho era colhido com carinho e paciência. A
+          vinheria foi crescendo, mantendo sempre o aroma da terra e o calor
+          humano do campo. Hoje, mesmo com a modernidade batendo à porta, cada
+          vinho ali conta uma história — de origem, de tradição, de cuidado. E
+          assim, a Casta Nobre continua a levar para a cidade o sabor autêntico
+          da vida no campo, em cada gole servido com alma e elegância.
+          </p>
+        </section>
+      </div>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Vinheria Elegante. Todos os direitos reservados.</p>
     </footer>
-  </div>
-</body>
+
+    
+  </body>
 </html>
