@@ -1,8 +1,10 @@
 integrantes do grupo:
 
 Nome: Anna Clara Ruggeri da Silva - RM: 565553
-Nome:Luis Gustavo Vasconcelos Costa - RM: 566023
+Nome:Enzo Carvalho Brincalepe Campo - RM: 562296
+Nome: João Vitor Piccolo - RM: 565127
 Nome:Luccas figueira gonçalves Costa - RM: 564240
+Nome:Luis Gustavo Vasconcelos Costa - RM: 566023
 
-
-
+github 
+https://github.com/Front-end-vinharia-agnello/projeto-vinheria-front.git 
