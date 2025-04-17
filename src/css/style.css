@@ -25,6 +25,17 @@ header {
 header h1 {
   font-size: 2rem;
 }
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav #logotipo{
+  width: 100%;
+  max-width: 112px;
+  height: auto;
+}
 
 nav ul {
   display: flex;
