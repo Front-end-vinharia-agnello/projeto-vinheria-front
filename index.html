@@ -6,9 +6,10 @@
     <link rel="shortcut icon" href="./src/img/vinho.png" />
     <title>Casta Nobre</title>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <input type="checkbox" id="toggle">
   </head>
   <body>
-    <!--Header-->
+    <div class="todoconteudo">
     <header>
       <nav>
         <img src="src/img/Logotipo.png" alt="Logotipo" id="logotipo">
@@ -17,8 +18,11 @@
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#vinhos">Vinhos</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li>
+            <label id="label_darkmode" for="toggle"></label>
+          </li>
         </ul> 
-          <div  id="pesquisa">
+          <div id="pesquisa">
             <input type="text" placeholder="Digite seu vinho" id="caixa">
           </div>
           <button id="carrinho-de-compras"><img src="./src/img/carrinho-de-compras.png" alt="Carrinho de compras" width="25px"></button>
@@ -27,7 +31,7 @@
       </nav>
     </section>
     </header>
-    <!--Fim do Header-->
+
     
     <!-- <section id="banner">
       <div>
@@ -47,7 +51,6 @@
             <p>Intenso e encorpado, perfeito para momentos especiais.</p>
             <p><strong>Preço:</strong> R$ 149,90</p>
             <button type="submit">Comprar</button>
-            <button type="submit" class="Carrinho">Carrinho</button>
           </div>
 
           <div class="vinho">
@@ -98,9 +101,9 @@
         <section id="contato">
           <h2>Contato</h2>
           <form>
-            <input type="text" placeholder="Seu nome" required />
-            <input type="email" placeholder="Seu e-mail" required />
-            <textarea placeholder="Mensagem" required></textarea>
+            <input class="contato" type="text" placeholder="Seu nome" required />
+            <input class="contato" type="email" placeholder="Seu e-mail" required />
+            <textarea class="contato" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
           </form>
         </section>
@@ -129,6 +132,6 @@
       <p>&copy; 2025 Vinheria Elegante. Todos os direitos reservados.</p>
     </footer>
 
-    
+  </div>
   </body>
 </html>
