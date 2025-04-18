@@ -196,7 +196,6 @@ footer {
   align-items: flex-end;
 }
 
-
 #contato, #sobre {
   flex: 1; 
   padding: 20px;
@@ -251,6 +250,7 @@ footer {
   border-radius: 7px;
   user-select: none;
 }
+
 #toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
   content: '🌛 Dark Mode';
   white-space: nowrap;
@@ -262,7 +262,7 @@ footer {
   user-select: none;
 }
 
-@media(max-width:768px){
+@media(max-width:942px){
   .lado-a-lado {
     flex-direction:column;
   }
@@ -273,4 +273,33 @@ footer {
     border: transparent;
   }
 
+  nav #logotipo{
+    width: 0%;
+    max-width: 112px;
+    height: auto;
+    background-color: #000000;
+  }
+
+  #toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+    content: '';
+    padding: 0%;
+  }
+
+  #toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+    content: '';
+    padding: 0%;
+  }
+
+  #navegacao{
+    width: 0%;
+    height: auto;
+  }
+
+  #navegacao a{
+    color: transparent;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  
 }
