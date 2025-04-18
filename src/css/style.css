@@ -168,7 +168,15 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-
+}
+.Carrinho{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
