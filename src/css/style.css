@@ -82,16 +82,6 @@ nav #user{
 }
 /* Fim da navbar */
 
-/* #banner div{
-  background-image: url(../img/bannerVinharia.png);
-  width: 100%;
-  margin: 10px auto;
-  height: 500px;
-  background-position: 50% 50%;
-  background-size: cover;
-  border: black solid 5px;
-} */
-
 #banner {
   width: 100%;
   max-width: 100%; /* ou outro valor que faça sentido para seu layout */
