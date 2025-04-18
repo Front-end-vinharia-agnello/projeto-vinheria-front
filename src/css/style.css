@@ -6,9 +6,9 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f7e9dd;
   color: #000000;
   line-height: 1.6;
+  background-color: #f7e9dd;
 }
 
 header {
@@ -30,6 +30,10 @@ nav #logotipo{
   width: 100%;
   max-width: 112px;
   height: auto;
+}
+
+#toggle {
+  display: none;
 }
 
 nav #navegacao{
@@ -87,6 +91,7 @@ nav #user{
   background-size: cover;
   border: black solid 5px;
 } */
+
 #banner {
   width: 100%;
   max-width: 100%; /* ou outro valor que faça sentido para seu layout */
@@ -106,6 +111,7 @@ h2 {
   margin-bottom: 1rem;
   color: #6e3b3b;
 }
+
 
 .galeria {
   display: flex;
@@ -134,6 +140,7 @@ h2 {
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
+
 
 form {
   display: flex;
@@ -164,19 +171,11 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.Carrinho{
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
 button:hover {
   background-color: #8c4f4f;
 }
+
 
 footer {
   background-color: #6e3b3b;
@@ -201,20 +200,76 @@ footer {
   margin: 0.5rem 0;
 }
 
-.info-contato strong {
-  color: #8b0000;
-}
-
 .lado-a-lado {
   display: flex;
   gap: 40px;
   align-items: flex-end;
 }
 
+
 #contato, #sobre {
   flex: 1; 
   padding: 20px;
   box-sizing: border-box;
+}
+
+#toggle:checked ~ .todoconteudo header{
+  background-color: #502c2c;
+}
+
+#toggle:checked ~ .todoconteudo .galeria .vinho {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+#toggle:checked ~ .todoconteudo {
+  background-color: #5f3030;
+  color: white;
+}
+
+#toggle:checked ~ .todoconteudo button{
+  background-color: #502c2c;
+}
+
+#toggle:checked ~ .todoconteudo button:hover {
+  background-color: #6e3b3b;
+}
+
+#toggle:checked ~ .todoconteudo h2{
+  color: rgb(255, 255, 255);
+}
+
+#toggle:checked ~ .todoconteudo #caixa{
+  background-color: #1d1d1d;
+  border: #1d1d1d;
+  caret-color: #f4f1ee;
+}
+
+#toggle:checked ~ .todoconteudo .contato{
+  background-color: #1d1d1d;
+  border: #1d1d1d;
+  caret-color: #f4f1ee;
+}
+
+#toggle:checked ~ .todoconteudo #label_darkmode::after{
+  content: '🌞 Light Mode';
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #d1d1d1;
+  color: rgb(94, 92, 92);
+  border-radius: 7px;
+  user-select: none;
+}
+#toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+  content: '🌛 Dark Mode';
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border-radius: 7px;
+  user-select: none;
 }
 
 @media(max-width:768px){
@@ -228,16 +283,4 @@ footer {
     border: transparent;
   }
 
-}
-
-@media(min-width:1566px){
-  #banner div{
-    background-image: url(../img/bannerVinharia_monitorGrande.png);
-    width: 100%;
-    margin: 10px auto;
-    height: 500px;
-    background-position: 50% 50%;
-    background-size: cover;
-    border: black solid 5px;
-  }
 }
