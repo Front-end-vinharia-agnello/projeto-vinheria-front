@@ -1,137 +1,305 @@
-/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000000;
+  line-height: 1.6;
+  background-color: #f7e9dd;
+}
+
+header {
+  background-color: #6e3b3b;
+  color: white;
+  text-align: center;
+  padding: auto;
+  
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0% 5%;
+}
+
+nav #logotipo{
+  width: 100%;
+  max-width: 112px;
+  height: auto;
+}
+
+#toggle {
+  display: none;
+}
+
+nav #navegacao{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline 3px rgb(255, 255, 255);
+}
+
+nav #pesquisa{
+  display: flex;
+  align-items: center;
+  margin: 0 1% 0 4%;
+  border-radius: 112px;
+}
+
+nav #caixa{
+  border-radius: 112px;
+}
+
+nav #carrinho-de-compras{
+  margin: auto;
+}
+
+nav #user{
+  margin: auto;
+}
+/* Fim da navbar */
+
+#banner {
+  width: 100%;
+  max-width: 100%; /* ou outro valor que faça sentido para seu layout */
+  height: auto;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Seções */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #6e3b3b;
+}
+
+
+.galeria {
+  display: flex;
+  gap: 1rem; /* Espaço entre as imagens */
+  justify-content: center;
+  flex-wrap: wrap; /* Faz as imagens quebrarem linha em telas pequenas */
+}
+
+.galeria .vinho {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Define a largura das caixas de vinhos */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.galeria .vinho:hover {
+  transform: scale(1.05);
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #6e3b3b;
+  outline: none;
+}
+
+button {
+  background-color: #6e3b3b;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8c4f4f;
+}
+
+
+footer {
+  background-color: #6e3b3b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.info-contato {
+  background-color: #f4f1ee;
+  border-left: 4px solid #8b0000;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-contato p {
+  margin: 0.5rem 0;
+}
+
+.lado-a-lado {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+#contato, #sobre {
+  flex: 1; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#toggle:checked ~ .todoconteudo header{
+  background-color: #502c2c;
+}
+
+#toggle:checked ~ .todoconteudo .galeria .vinho {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+#toggle:checked ~ .todoconteudo {
+  background-color: #5f3030;
+  color: white;
+}
+
+#toggle:checked ~ .todoconteudo button{
+  background-color: #502c2c;
+}
+
+#toggle:checked ~ .todoconteudo button:hover {
+  background-color: #6e3b3b;
+}
+
+#toggle:checked ~ .todoconteudo h2{
+  color: rgb(255, 255, 255);
+}
+
+#toggle:checked ~ .todoconteudo #caixa{
+  background-color: #1d1d1d;
+  border: #1d1d1d;
+  caret-color: #f4f1ee;
+}
+
+#toggle:checked ~ .todoconteudo .contato{
+  background-color: #1d1d1d;
+  border: #1d1d1d;
+  caret-color: #f4f1ee;
+}
+
+#toggle:checked ~ .todoconteudo #label_darkmode::after{
+  content: '🌞 Light Mode';
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #d1d1d1;
+  color: rgb(94, 92, 92);
+  border-radius: 7px;
+  user-select: none;
+}
+
+#toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+  content: '🌛 Dark Mode';
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border-radius: 7px;
+  user-select: none;
+}
+
+@media(max-width:942px){
+  .lado-a-lado {
+    flex-direction:column;
   }
-  
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fdf6f0;
-    color: #3d2b2b;
-    line-height: 1.6;
+
+  #banner div{
+    width: 0px;
+    height: 0px;
+    border: transparent;
   }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #6e3b3b;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  /* Navegação */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    margin-top: 1rem;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  nav a:hover {
-    text-decoration: underline 3px rgb(255, 255, 255);
-  }
-  
-  /* Conteúdo principal */
-  main {
-    padding: 2rem;
-  }
-  
-  /* Seções */
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  h2 {
-    margin-bottom: 1rem;
-    color: #6e3b3b;
-  }
-  
-  /* Galeria de vinhos */
-  .galeria {
-    display: flex;
-    gap: 1rem; /* Espaço entre as imagens */
-    justify-content: center;
-    flex-wrap: wrap; /* Faz as imagens quebrarem linha em telas pequenas */
-  }
-  
-  .galeria .vinho {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Define a largura das caixas de vinhos */
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .galeria .vinho:hover {
-    transform: scale(1.05);
-  }
-  
-  .galeria img {
-    width: 100%;
+
+  nav #logotipo{
+    width: 0%;
+    max-width: 112px;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
+    background-color: #000000;
+  }
+
+  #toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+    content: '';
+    padding: 0%;
+  }
+
+  #toggle:not(:checked) ~ .todoconteudo #label_darkmode::after {
+    content: '';
+    padding: 0%;
+  }
+
+  #navegacao{
+    width: 0%;
+    height: auto;
+  }
+
+  #navegacao a{
+    color: transparent;
+  }
+  a:hover{
+    text-decoration: none;
   }
   
-  /* Formulário */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin-top: 1rem;
-  }
-  
-  input, textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #6e3b3b;
-    outline: none;
-  }
-  
-  button {
-    background-color: #6e3b3b;
-    color: white;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #8c4f4f;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #6e3b3b;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
+}
