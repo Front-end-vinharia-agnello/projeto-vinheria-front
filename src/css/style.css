@@ -65,7 +65,7 @@ nav a:hover {
 nav #pesquisa{
   display: flex;
   align-items: center;
-  margin: 0 1% 0 7%;
+  margin: 0 1% 0 4%;
   border-radius: 112px;
 }
 
