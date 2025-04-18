@@ -28,7 +28,8 @@ header h1 {
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0% 5%;
 }
 
 nav #logotipo{
@@ -37,12 +38,17 @@ nav #logotipo{
   height: auto;
 }
 
+nav #navegacao{
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   list-style: none;
-  margin-top: 1rem;
 }
 
 nav a {
@@ -58,9 +64,23 @@ nav a:hover {
   text-decoration: underline 3px rgb(255, 255, 255);
 }
 
-nav #login-compras{
+nav #pesquisa{
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  margin: 0 1% 0 7%;
+  border-radius: 112px;
+}
+
+nav #caixa{
+  border-radius: 112px;
+}
+
+nav #carrinho-de-compras{
+  margin: auto;
+}
+
+nav #user{
+  margin: auto;
 }
 
 
