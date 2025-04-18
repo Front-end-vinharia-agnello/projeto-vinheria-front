@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #000000;
   line-height: 1.6;
 }
-/* inicio do navbar */
 
 header {
   background-color: #6e3b3b;
@@ -109,7 +107,6 @@ h2 {
   color: #6e3b3b;
 }
 
-
 .galeria {
   display: flex;
   gap: 1rem; /* Espaço entre as imagens */
@@ -137,7 +134,6 @@ h2 {
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
-
 
 form {
   display: flex;
@@ -182,7 +178,6 @@ button:hover {
   background-color: #8c4f4f;
 }
 
-
 footer {
   background-color: #6e3b3b;
   color: white;
@@ -215,7 +210,6 @@ footer {
   gap: 40px;
   align-items: flex-end;
 }
-
 
 #contato, #sobre {
   flex: 1; 
