@@ -3,7 +3,7 @@
 - Anna Clara Ruggeri da Silva - RM: 565553
 - Enzo Carvalho Brincalepe Campo - RM: 562296
 - João Vitor Piccolo - RM: 565127
-- Luccas figueira gonçalves Costa - RM: 564240
+- Luccas figueira Gonçalves Costa - RM: 564240
 - Luis Gustavo Vasconcelos Costa - RM: 566023
 
 ## Links 
